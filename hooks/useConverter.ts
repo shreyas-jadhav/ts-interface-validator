@@ -43,7 +43,7 @@ const extractData = async (typescript: string): Promise<CodeData> => {
 		}),
 	});
 
-	if (res.status !== 200) return message.error(`Something went wrong! Please enter only valid typescript interface!`);
+	if (!res.ok) return message.error(`Something went wrong! Please enter only valid typescript interface!`);
 	const fields = (await res.json()).data;
 	console.log(fields);
 	return {
