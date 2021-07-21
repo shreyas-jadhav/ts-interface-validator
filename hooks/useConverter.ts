@@ -43,7 +43,11 @@ const extractData = async (typescript: string): Promise<CodeData> => {
 		}),
 	});
 
-	if (!res.ok) return;
+	if (!res.ok)
+		return {
+			name,
+			fields: [],
+		};
 	const fields = (await res.json()).data;
 	console.log(fields);
 	return {
