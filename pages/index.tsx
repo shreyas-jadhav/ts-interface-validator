@@ -9,14 +9,14 @@ const Home = () => {
 	return (
 		<Layout>
 			<Header>
-				<Title style={{ color: 'white', textAlign: 'center' }}>TypeScript Interface to JavaScript Validation</Title>
+				<h1 style={{ color: 'white', fontWeight: 800, textAlign: 'center' }}>TypeScript Interface to JavaScript Validation</h1>
 			</Header>
 			<Content>
 				<PageHeader
 					ghost={false}
 					backIcon={<></>}
 					title='What this does?'
-					subTitle='Generates validation code in JavaScript based on given TypeScript Interface.'
+					subTitle='Generates validation code in JavaScript based function for an object of given TypeScript Interface.'
 					extra={[
 						<Button
 							key='2'

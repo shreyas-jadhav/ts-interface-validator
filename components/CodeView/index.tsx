@@ -10,10 +10,10 @@ const Codeview = () => {
 	return (
 		<Content>
 			<Row>
-				<Col span={12}>
+				<Col xs={24} md={12}>
 					<Editor theme='vs-dark' height='70vh' value={typescript} onChange={handleTypeScriptChange} defaultLanguage='typescript' defaultValue='// paste your typescript interface here' />
 				</Col>
-				<Col span={12}>
+				<Col xs={24} md={12}>
 					<Editor theme='vs-dark' height='70vh' defaultLanguage='typescript' value={javascript} defaultValue='// validation code would appear here' />
 				</Col>
 			</Row>
