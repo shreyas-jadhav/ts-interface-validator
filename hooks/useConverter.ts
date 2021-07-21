@@ -33,7 +33,7 @@ const extractData = async (typescript: string): Promise<CodeData> => {
 	const name = typescript.slice(typescript.search(`interface`), typescript.search(`{`) + 1).split(` `)[1];
 	console.log(name);
 
-	const res = await fetch(`http://localhost:3000/api/converter`, {
+	const res = await fetch(`/api/converter`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
